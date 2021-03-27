@@ -78,7 +78,7 @@ void desktop_crawl(
 #elif defined(_POSIX_PATH_MAX)
 	char path[_POSIX_PATH_MAX];
 #else
-	char path[1024];
+	char path[2048];
 #endif
 
 	dir_info = readdir(dir);
